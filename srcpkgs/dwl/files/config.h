@@ -157,7 +157,7 @@ static const char *screenshotcmd[] = {
 	"sh", "-c",
 	"grim \"$(xdg-user-dir PICTURES)/screenshots/screenshot_$(date +%H-%M-%S_%d-%m-%Y).png\"",
 	NULL
-}
+};
 
 
 static const Key keys[] = {
