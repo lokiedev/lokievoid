@@ -128,6 +128,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 static const char *termcmd[] = { "foot", NULL };
 static const char *menucmd[] = { "fuzzel", NULL };
 static const char *browsercmd[] = { "librewolf", NULL };
+static const char *gtklockcmd[] = { "gtklock", NULL };
 
 static const char *brightnessupcmd[] = {
 	"sh", "-c",
@@ -168,6 +169,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_d,           spawn,            {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_Return,      spawn,            {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_b,           spawn,            {.v = browsercmd} },
+	{ MODKEY,                    XKB_KEY_l,           spawn,            {.v = gtklockcmd} },
 
 	/* Tool */
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_s,           spawn,            {.v = screenshotcmd} },
